@@ -145,3 +145,18 @@ body.light-mode .text-muted {
 body.light-mode footer {
     border-color: #d2d2d7 !important;
 }
+
+/* ==========================================================================
+   AJUSTE DE MENÚ HAMBURGUESA EN MODO CLARO
+   ========================================================================== */
+
+/* 1. Cambia el borde del botón hamburguesa a oscuro */
+body.light-mode .navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+/* 2. Invierte el ícono SVG de las tres líneas de blanco a negro */
+body.light-mode .navbar-toggler-icon {
+    filter: invert(1);
+    transition: filter 0.3s ease;
+}
